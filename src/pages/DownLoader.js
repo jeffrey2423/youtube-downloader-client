@@ -44,6 +44,7 @@ export default class DownLoader extends Component {
                 mostrarMensaje.Error(error.message)
             } finally {
                 this.setState({ Loading: false });
+                this.setState({ Url: "" });
             }
 
         }
